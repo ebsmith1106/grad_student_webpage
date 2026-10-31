@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Elizabeth Bayly Smith | Atmospheric Scientist</title>
   <meta name="description" content="Graduate student in Earth and Atmospheric Science at The City College of New York. Research, projects, and experience in weather risk communication and disaster preparedness.">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">EB</a>
-      <nav class="site-nav" aria-label="Main navigation">
+    <div class="header-inner">
+      <a class="brand" href="#top">EB Smith</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#education">Education</a>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -27,227 +32,252 @@
 
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Graduate Student &middot; Earth &amp; Atmospheric Science</p>
-          <h1>EB Smith</h1>
-          <p class="lead">
-            Atmospheric scientist focused on weather-related
-            disaster preparedness and risk communication.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Work</a>
-            <a class="btn btn-outline" href="#contact">Get in Touch</a>
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="label reveal">Atmospheric Scientist &middot; New York</p>
+            <h1 class="reveal d1">Atmospheric science for the moments when <em>decisions</em> matter.</h1>
+            <p class="hero-intro reveal d2">
+              I study how weather information is produced, communicated, and acted on
+              during high-impact events, combining forecasting and data analysis with
+              experience in emergency response.
+            </p>
+          </div>
+          <figure class="hero-portrait reveal d1">
+            <img src="images/grad.jpg" alt="Portrait of Elizabeth Bayly Smith in graduation attire" width="667" height="1000">
+          </figure>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div>
+            <p class="label">Now</p>
+            <p>Graduate student, Earth &amp; Atmospheric Science, The City College of New York</p>
+          </div>
+          <div>
+            <p class="label">Fellowship</p>
+            <p>NOAA EPP CESSRST II, Cohort 5 Fellow</p>
+          </div>
+          <div>
+            <p class="label">Focus</p>
+            <p>Weather risk communication &amp; disaster preparedness</p>
           </div>
         </div>
-        <figure class="portrait">
-          <img src="Grad_Pic.JPG" alt="Portrait of Elizabeth Bayly Smith in graduation attire">
+      </div>
+    </section>
+
+    <!-- Rolling image strip -->
+    <section class="marquee" aria-label="Photos from fieldwork, conferences and coursework">
+      <div class="marquee-track">
+        <figure class="roll-item">
+          <img src="images/helene-pre.jpg" alt="Hand-drawn schematic of Hurricane Helene and its predecessor rain event over the southeastern United States" width="987" height="1000">
+          <figcaption>Hurricane Helene schematic of the predecessor rain event (PRE), Synoptic Meteorology final project.</figcaption>
+        </figure>
+        <figure class="roll-item">
+          <img src="images/ams-houston.jpg" alt="Elizabeth at the AMS Annual Meeting in Houston" width="750" height="1000">
+          <figcaption>AMS Annual Meeting, Houston, 2026.</figcaption>
+        </figure>
+        <figure class="roll-item">
+          <img src="images/balloon-launch.jpg" alt="Weather balloon launch at the National Weather Service in Albany" width="750" height="1000">
+          <figcaption>Weather balloon launch at NWS Albany.</figcaption>
+        </figure>
+        <figure class="roll-item">
+          <img src="images/scholarship.jpg" alt="Shaking hands with Professor Kristen Corbosiero at the scholarship ceremony" width="750" height="1000">
+          <figcaption>Receiving the 2025 Arthur Loesch Scholarship. <a href="https://www.albany.edu/daes/awards-and-scholarships">About the scholarship</a>.</figcaption>
+        </figure>
+        <figure class="roll-item">
+          <img src="images/nyc.jpg" alt="Elizabeth in New York City with the Empire State Building behind her" width="750" height="1000">
+          <figcaption>New York City, home of my graduate studies.</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- 01 About -->
     <section id="about" class="section">
-      <div class="container narrow">
-        <h2>About</h2>
-        <p>
-          Hello! My name is Elizabeth Bayly (EB) Smith. I am a graduate student in the Earth
-          and Atmospheric Science Department at The City College of New York, and a
-          NOAA EPP Center for Earth Systems Sciences and Remote Sensing Technologies II
-          (CESSRST II), Cohort 5 Fellow. I earned my B.S. in Atmospheric Science with a
-          minor in Mathematics from the University at Albany, SUNY. My work sits at the
-          intersection of operational meteorology, data analysis, and emergency management.
-        </p>
-        <p>
-          Alongside my scientific training, I served as a volunteer EMT,
-          which shapes how I think about forecasting: a forecast matters most when it
-          helps people make decisions. I am interested in how weather information is
-          produced, communicated, and acted on during high-impact events.
-        </p>
-        <p class="interests">
-          <strong>Research interests:</strong>
-          weather risk communication &middot; disaster preparedness &middot;
-          operational forecasting &middot; atmospheric data analysis
-        </p>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section section-alt">
-      <div class="container narrow">
-        <h2>Education</h2>
-        <div class="entry">
-          <div class="entry-head">
-            <h3>M.S. / Graduate Studies, Earth &amp; Atmospheric Science</h3>
-            <span class="entry-date">In progress</span>
-          </div>
-          <p class="entry-sub">The City College of New York, Manhattan, NY</p>
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <p class="section-num">(01)</p>
+          <h2>About</h2>
         </div>
-        <div class="entry">
-          <div class="entry-head">
-            <h3>B.S., Atmospheric Science (Minor in Mathematics)</h3>
-            <span class="entry-date">Graduated</span>
+        <div>
+          <p class="lede reveal">
+            My work sits at the intersection of operational meteorology, data analysis,
+            and emergency management.
+          </p>
+          <div class="body-cols reveal">
+            <p>
+              Hello! My name is Elizabeth Bayly (EB) Smith. I am a graduate student in the Earth
+              and Atmospheric Science Department at The City College of New York, and a
+              NOAA EPP Center for Earth Systems Sciences and Remote Sensing Technologies II
+              (CESSRST II), Cohort 5 Fellow. I earned my B.S. in Atmospheric Science with a
+              minor in Mathematics from the University at Albany, SUNY.
+            </p>
+            <p>
+              Alongside my scientific training, I served as a volunteer EMT,
+              which shapes how I think about forecasting: a forecast matters most when it
+              helps people make decisions. I am interested in how weather information is
+              produced, communicated, and acted on during high-impact events.
+            </p>
           </div>
-          <p class="entry-sub">University at Albany, SUNY &middot; Summa Cum Laude</p>
+          <ul class="interest-list reveal">
+            <li><span>i.</span> Weather risk communication</li>
+            <li><span>ii.</span> Disaster preparedness</li>
+            <li><span>iii.</span> Operational forecasting</li>
+            <li><span>iv.</span> Atmospheric data analysis</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
+    <!-- 02 Research -->
+    <section id="research" class="section">
+      <span id="projects"></span>
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <p class="section-num">(02)</p>
+          <h2>Research &amp; Projects</h2>
+        </div>
+        <div>
+          <a class="feature reveal" href="mjo-lead-lag.html">
+            <div class="feature-img">
+              <img src="mjo_lead_lag_thumb.png" alt="Chart of how much more often Atlantic tropical storms form after MJO phases 1 to 2 than after phases 6 to 7, by lead time" width="900" height="619">
+            </div>
+            <div>
+              <p class="label">Undergraduate research &middot; 2026</p>
+              <h3>MJO Lead&ndash;Lag Relationship with North Atlantic Tropical Storm Formation</h3>
+              <p>
+                Can today's Madden&ndash;Julian Oscillation phase hint at Atlantic storm
+                formation weeks ahead? For 2009&ndash;2025, storms formed about twice as
+                often when the MJO had been in phases 1&ndash;2 twelve days earlier as when
+                it had been in phases 6&ndash;7.
+              </p>
+              <span class="more-link">Read the project <span aria-hidden="true">&rarr;</span></span>
+              <p class="meta-line">Python &middot; pandas &middot; Statistical analysis &middot; HURDAT2</p>
+            </div>
+          </a>
+          <p class="in-progress reveal">More projects in progress, including mapping work in QGIS and my undergraduate honors thesis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Experience -->
     <section id="experience" class="section">
-      <div class="container narrow">
-        <h2>Experience</h2>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>NY State Weather Risk Communication Center</h3>
-            <span class="entry-date">2024 &amp; Summer 2025</span>
-          </div>
-          <p class="entry-sub">Student Assistant</p>
-          <ul>
-            <li>Compiled and created daily weather briefings</li>
-            <li>Compiled NWS watch, warning, and advisory criteria into a master spreadsheet</li>
-            <li>Attended multiple MAC calls with NY State Division of Homeland Security and Emergency Services personnel</li>
-            <li>Forecasted for outdoor concerts across NY (Artpark, Jones Beach, SPAC) and for Buffalo Bills Training Camp</li>
-            <li>Worked with NWS partners for morning briefings and tornado damage assessment</li>
-          </ul>
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <p class="section-num">(03)</p>
+          <h2>Experience</h2>
         </div>
+        <div>
+          <div class="rows">
+            <article class="row reveal">
+              <h3>NY State Weather Risk Communication Center</h3>
+              <span class="when">2024 &amp; Summer 2025</span>
+              <p class="role">Student Assistant</p>
+              <ul>
+                <li>Compiled and created daily weather briefings</li>
+                <li>Compiled NWS watch, warning, and advisory criteria into a master spreadsheet</li>
+                <li>Attended multiple MAC calls with NY State Division of Homeland Security and Emergency Services personnel</li>
+                <li>Forecasted for outdoor concerts across NY (Artpark, Jones Beach, SPAC) and for Buffalo Bills Training Camp</li>
+                <li>Worked with NWS partners for morning briefings and tornado damage assessment</li>
+              </ul>
+            </article>
 
-        <div class="entry">
-          <div class="entry-head">
-            <h3>National Weather Service, Albany</h3>
-            <span class="entry-date">Jan &ndash; May 2025</span>
+            <article class="row reveal">
+              <h3>National Weather Service, Albany</h3>
+              <span class="when">Jan &ndash; May 2025</span>
+              <p class="role">Student Assistant</p>
+              <ul>
+                <li>Shadowed forecasters' daily operations and attended office morning meetings</li>
+                <li>Completed multiple Commerce Learning Center trainings</li>
+                <li>Measured and entered CoCoRaHS data</li>
+                <li>Created social media posts</li>
+                <li>Practiced writing TAFs and Forecast Discussions</li>
+                <li>Launched 0Z and 12Z weather balloons</li>
+                <li>Observed and practiced the creation of warnings</li>
+              </ul>
+            </article>
+
+            <article class="row reveal">
+              <h3>FleetWeather / Polestar Global</h3>
+              <span class="when">Summer 2025</span>
+              <p class="role">Student Marine Forecaster Assistant</p>
+              <ul>
+                <li>Completed intensive training across all FleetWeather teams</li>
+                <li>Shadowed forecasters and participated in marine forecasting COMET modules</li>
+                <li>Gained hands-on experience in vessel routing: monitored Charter Party compliance, analyzed fuel consumption, and escalated operational needs to Duty Directors</li>
+                <li>Wrote daily synopses for different ocean basins</li>
+              </ul>
+            </article>
+
+            <article class="row reveal">
+              <h3>Volunteer EMT</h3>
+              <span class="when">High School &amp; Early College</span>
+              <p class="role">Poestenkill Fire Company</p>
+              <ul>
+                <li>Responded to 100+ traffic accidents, medical emergencies, rescue operations, and structural fires</li>
+                <li>Helped control emergency scenes, treated the injured, and maintained scene safety protocols</li>
+                <li>Communicated effectively with Forest Rangers, local Sheriffs, State Troopers, Fire Marshals, and fellow firefighters</li>
+                <li>Attended monthly meetings on upcoming events, community outreach, finances, safety preparedness, and other company concerns</li>
+              </ul>
+            </article>
           </div>
-          <p class="entry-sub">Student Assistant</p>
-          <ul>
-            <li>Shadowed forecasters' daily operations and attended office morning meetings</li>
-            <li>Completed multiple Commerce Learning Center trainings</li>
-            <li>Measured and entered CoCoRaHS data</li>
-            <li>Created social media posts</li>
-            <li>Practiced writing TAFs and Forecast Discussions</li>
-            <li>Launched 0Z and 12Z weather balloons</li>
-            <li>Observed and practiced the creation of warnings</li>
-          </ul>
+          <p class="skills-line reveal"><strong>Technical skills</strong> &nbsp;Python &middot; Linux &middot; AWIPS &middot; QGIS</p>
         </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>FleetWeather / Polestar Global</h3>
-            <span class="entry-date">Summer 2025</span>
-          </div>
-          <p class="entry-sub">Student Marine Forecaster Assistant</p>
-          <ul>
-            <li>Completed intensive training across all FleetWeather teams</li>
-            <li>Shadowed forecasters and participated in marine forecasting COMET modules</li>
-            <li>Gained hands-on experience in vessel routing: monitored Charter Party compliance, analyzed fuel consumption, and escalated operational needs to Duty Directors</li>
-            <li>Wrote daily synopses for different ocean basins</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>Volunteer EMT</h3>
-            <span class="entry-date">High School &amp; Early College</span>
-          </div>
-          <p class="entry-sub">Poestenkill Fire Company</p>
-          <ul>
-            <li>Responded to 100+ traffic accidents, medical emergencies, rescue operations, and structural fires</li>
-            <li> Helped control emergency scenes, treated the injured, and maintained scene safety protocols</li>
-            <li>Communicated effectively with Forest Rangers, local Sheriffs, State Troopers, Fire Marshals, and fellow firefighters</li>
-            <li>Attended monthly meetings on upcoming events, community outreach, finances, safety preparedness, and other company concerns</li>
-          </ul>
-        </div>
-
-        <h3 class="skills-title">Technical Skills</h3>
-        <ul class="tags">
-          <li>Python</li>
-          <li>Linux</li>
-          <li>AWIPS</li>
-          <li>QGIS</li>
-        </ul>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2>Projects &amp; Research</h2>
-        <p class="section-intro">Selected undergraduate and graduate work. More coming soon.</p>
-
-        <div class="card-grid">
-          <article class="card card-project">
-            <a class="card-thumb" href="mjo-lead-lag.html">
-              <img src="mjo_lead_lag_thumb.png" alt="Chart of North Atlantic tropical storm formation rate by MJO phase and lead time">
-            </a>
-            <p class="card-tag">Undergraduate research &middot; 2026</p>
-            <h3><a href="mjo-lead-lag.html">MJO Lead&ndash;Lag Relationship with North Atlantic Tropical Storm Formation</a></h3>
-            <p>Can today's Madden&ndash;Julian Oscillation phase hint at Atlantic storm formation weeks ahead? For 2009&ndash;2025, storms formed about twice as often when the MJO had been in phases 1&ndash;2 twelve days earlier as when it had been in phases 6&ndash;7.</p>
-            <p class="card-meta">Python &middot; pandas &middot; Statistical analysis &middot; HURDAT2</p>
-            <a class="card-link" href="mjo-lead-lag.html">Read more &rarr;</a>
+    <!-- 04 Education -->
+    <section id="education" class="section">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <p class="section-num">(04)</p>
+          <h2>Education</h2>
+        </div>
+        <div class="rows">
+          <article class="row reveal">
+            <h3>M.S. / Graduate Studies, Earth &amp; Atmospheric Science</h3>
+            <span class="when">In progress</span>
+            <p class="role">The City College of New York, Manhattan, NY</p>
           </article>
-
-          <article class="card">
-            <p class="card-tag">Coming soon</p>
-            <h3>Project Title</h3>
-            <p>A short description of the question, data, and methods used.</p>
-            <p class="card-meta">QGIS &middot; Mapping</p>
-          </article>
-
-          <article class="card">
-            <p class="card-tag">Coming soon</p>
-            <h3>Project Title</h3>
-            <p>A short description of the question, data, and methods used.</p>
-            <p class="card-meta">Honors thesis</p>
+          <article class="row reveal">
+            <h3>B.S., Atmospheric Science (Minor in Mathematics)</h3>
+            <span class="when">Graduated</span>
+            <p class="role">University at Albany, SUNY &middot; Summa Cum Laude</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery">
-          <figure>
-            <img src="Hurricane_Helene_PRE.jpeg" alt="Hurricane Helene">
-            <figcaption>Hurricane Helene schematic depicting the predecessor rain event (PRE). Made for Synoptic Meteorology Final Project. <!-- EDIT: add context (location, what you were doing) --></figcaption>
-          </figure>
-          <figure>
-            <img src="Me_AMS_Houston_2026.png" alt="Elizabeth at the AMS Annual Meeting in Houston">
-            <figcaption>At the AMS Annual Meeting, Houston, 2026. <!-- EDIT: add context --></figcaption>
-          </figure>
-          <figure>
-            <img src="WX_Launch_ETEC_NWS.png" alt="Weather balloon launch at the National Weather Service in Albany">
-            <figcaption>Weather balloon launch at NWS Albany. <!-- EDIT: confirm or add context --></figcaption>
-          </figure>
-          <figure>
-            <img src="Arthur_Scholarship.png" alt="Shaking hands with Professor Kristen Corbosiero">
-            <figcaption>Receiving the 2025 Arthur Loesch Scholarship. More information about the scholarship is available <a href="https://www.albany.edu/daes/awards-and-scholarships">here</a>.</figcaption>
-          </figure>
+    <!-- 05 Contact -->
+    <section id="contact" class="section">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <p class="section-num">(05)</p>
+          <h2>Contact</h2>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container narrow">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li><span>University Email</span> <a href="mailto:elizabeth.smith35@stu-mail.ccny.cuny.edu">elizabeth.smith35@stu-mail.ccny.cuny.edu</a></li>
-          <li><span>Personal Email</span> <a href="mailto:eliz.bayly@gmail.com">eliz.bayly@gmail.com</a></li>
-          <li><span>GitHub</span> <a href="https://github.com/ebsmith1106">github.com/ebsmith1106</a></li>
-          <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/elizabeth-smith-80289427b/">linkedin.com/in/elizabeth-smith-80289427b</a></li>
-        </ul>
+        <div>
+          <p class="contact-big reveal">
+            Interested in collaborating or talking weather?<br>
+            <a href="mailto:eliz.bayly@gmail.com">eliz.bayly@gmail.com</a>
+          </p>
+          <ul class="contact-list reveal">
+            <li><span>University email</span> <a href="mailto:elizabeth.smith35@stu-mail.ccny.cuny.edu">elizabeth.smith35@stu-mail.ccny.cuny.edu</a></li>
+            <li><span>Personal email</span> <a href="mailto:eliz.bayly@gmail.com">eliz.bayly@gmail.com</a></li>
+            <li><span>GitHub</span> <a href="https://github.com/ebsmith1106">github.com/ebsmith1106</a></li>
+            <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/elizabeth-smith-80289427b/">linkedin.com/in/elizabeth-smith-80289427b</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Elizabeth Bayly Smith. Built with HTML and CSS.</p>
+    <div class="footer-inner">
+      <p>&copy; 2026 Elizabeth Bayly Smith</p>
+      <a href="#top">Back to top &uarr;</a>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>

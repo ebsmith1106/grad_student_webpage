@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MJO Lead&ndash;Lag &amp; Atlantic Tropical Storm Formation | EB Smith</title>
   <meta name="description" content="Undergraduate research on how the Madden-Julian Oscillation phase relates to North Atlantic tropical storm formation one to three weeks later, 2009-2025.">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">EB</a>
-      <nav class="site-nav" aria-label="Main navigation">
+    <div class="header-inner">
+      <a class="brand" href="index.html">EB Smith</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html#about">About</a>
-        <a href="index.html#education">Education</a>
+        <a href="index.html#research">Research</a>
         <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#education">Education</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
@@ -26,9 +31,9 @@
   <main>
 
     <section class="project-hero">
-      <div class="container">
-        <a class="back-link" href="index.html#projects">&larr; All projects</a>
-        <p class="eyebrow" style="margin-top:1.2rem">Undergraduate Research ATM 306: Climate and Climate Change &middot; University at Albany &middot; 2026</p>
+      <div class="narrow">
+        <a class="back-link" href="index.html#research">&larr; All projects</a>
+        <p class="eyebrow">Undergraduate Research ATM 306: Climate and Climate Change &middot; University at Albany &middot; 2026</p>
         <h1>MJO Lead&ndash;Lag Relationship with North Atlantic Tropical Storm Formation</h1>
         <p class="lead">
           Does the phase of the Madden&ndash;Julian Oscillation tell us anything
@@ -37,8 +42,8 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container narrow project-body">
+    <section>
+      <div class="narrow project-body">
 
         <h2>Overview</h2>
         <p>
@@ -62,7 +67,7 @@
         </p>
 
         <div class="fact-row">
-          <div class="fact"><strong>267</strong><span>Tropical storms, Jun<strong>280</strong><span>Tropical storms, 2009&ndash;2025</span>ndash;Nov 2009<strong>280</strong><span>Tropical storms, 2009&ndash;2025</span>ndash;2025</span></div>
+          <div class="fact"><strong>267</strong><span>Tropical storms, Jun&ndash;Nov 2009&ndash;2025</span></div>
           <div class="fact"><strong>0&ndash;21 days</strong><span>Lags tested</span></div>
           <div class="fact"><strong>12 days</strong><span>Strongest lead time</span></div>
           <div class="fact"><strong>2.3&times;</strong><span>Formation rate, phases 1&ndash;2 vs 6&ndash;7</span></div>
@@ -150,7 +155,7 @@
         <div class="project-actions">
           <a class="btn btn-primary" href="https://github.com/ebsmith1106/grad_student_webpage/blob/main/mjo_genesis_rate_2009_2025.py" target="_blank" rel="noopener">View the analysis code</a>
           <a class="btn btn-ghost" href="https://github.com/ebsmith1106/grad_student_webpage/blob/main/graphs_for_MJO_1.ipynb" target="_blank" rel="noopener">Original course notebook</a>
-          <a class="btn btn-ghost" href="index.html#projects">Back to projects</a>
+          <a class="btn btn-ghost" href="index.html#research">Back to projects</a>
         </div>
 
       </div>
@@ -159,10 +164,13 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Elizabeth Bayly Smith. Built with HTML and CSS.</p>
+    <div class="footer-inner">
+      <p>&copy; 2026 Elizabeth Bayly Smith</p>
+      <a href="index.html#research">&larr; Back to research</a>
     </div>
   </footer>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
