@@ -139,6 +139,13 @@ code { font-size: 0.9em; }
   max-width: 34em;
   color: var(--ink-soft);
 }
+.hero-figure { margin: 0; }
+.hero-name {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin-top: 0.9rem;
+}
 .hero-portrait {
   margin: 0;
   aspect-ratio: 4 / 5;
@@ -413,7 +420,7 @@ code { font-size: 0.9em; }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero-grid, .feature { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-portrait { max-width: 360px; }
+  .hero-figure { max-width: 360px; }
   .section-grid { grid-template-columns: 1fr; gap: 1.2rem; }
   .section-head { position: static; display: flex; gap: 0.8rem; align-items: baseline; }
   .section { padding: 80px 0; }
