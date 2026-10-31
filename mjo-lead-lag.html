@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MJO Lead&ndash;Lag &amp; Atlantic Tropical Storm Formation | EB Smith</title>
+  <meta name="description" content="Undergraduate research on how the Madden-Julian Oscillation phase relates to North Atlantic tropical storm formation one to three weeks later, 2009-2025.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EB</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">&larr; All projects</a>
+        <p class="eyebrow" style="margin-top:1.2rem">Undergraduate Research &middot; University at Albany &middot; 2026</p>
+        <h1>MJO Lead&ndash;Lag Relationship with North Atlantic Tropical Storm Formation</h1>
+        <p class="lead">
+          Does the phase of the Madden&ndash;Julian Oscillation today tell us anything
+          about how likely Atlantic tropical storms are to form one to three weeks from now?
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow project-body">
+
+        <h2>Overview</h2>
+        <p>
+          The Madden&ndash;Julian Oscillation (MJO) is the dominant source of
+          sub-seasonal variability in the tropics. It is an eastward-moving pulse of
+          enhanced and suppressed rainfall that circles the globe every 30&ndash;60
+          days. As it moves, it changes winds and moisture far from where it is
+          raining, including over the Atlantic hurricane basin. Because the MJO can be
+          predicted weeks in advance, knowing <em>how long</em> its influence takes to
+          reach the Atlantic could help extend tropical cyclone outlooks beyond the
+          range of ordinary weather forecasts.
+        </p>
+        <p>
+          Previous studies (e.g.
+          <a href="https://tropical.colostate.edu/Publications/papers/klotzbach_2010.pdf" target="_blank" rel="noopener">Klotzbach 2010</a>)
+          found that Atlantic storm activity tends to be higher when the MJO's
+          rainfall is over Africa and the western Indian Ocean (phases 1&ndash;2) and
+          lower when it is over the western Pacific (phases 6&ndash;7). This project
+          asks how that contrast changes as the gap between the MJO phase and the
+          day a storm forms grows from 0 to 21 days.
+        </p>
+
+        <div class="fact-row">
+          <div class="fact"><strong>267</strong><span>Tropical storms, Jun<strong>280</strong><span>Tropical storms, 2009&ndash;2025</span>ndash;Nov 2009<strong>280</strong><span>Tropical storms, 2009&ndash;2025</span>ndash;2025</span></div>
+          <div class="fact"><strong>0&ndash;21 days</strong><span>Lags tested</span></div>
+          <div class="fact"><strong>12 days</strong><span>Strongest lead time</span></div>
+          <div class="fact"><strong>2.3&times;</strong><span>Formation rate, phases 1&ndash;2 vs 6&ndash;7</span></div>
+        </div>
+
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Tropical storms:</strong> NOAA National Hurricane Center Atlantic best-track database (HURDAT2), 2009&ndash;2025.</li>
+          <li><strong>MJO:</strong> Daily Real-time Multivariate MJO index (RMM1 and RMM2; Wheeler &amp; Hendon 2004).</li>
+        </ul>
+
+        <h2>Method</h2>
+        <ol>
+          <li><strong>Storm formation.</strong> For each storm (identified by its unique NHC ID), found the first time it reached tropical storm strength (&ge; 34 kt) as a tropical or subtropical cyclone.</li>
+          <li><strong>MJO phase.</strong> Assigned each day a phase from 1&ndash;8 using the standard Wheeler&ndash;Hendon phase diagram, and kept only days with an active MJO (RMM amplitude &ge; 1).</li>
+          <li><strong>Lag.</strong> For each lag from 0 to 21 days, matched every storm to the MJO phase that many days <em>before</em> it formed.</li>
+          <li><strong>Formation rate.</strong> Some phases happen more often than others, so storm counts in each phase were divided by the number of active-MJO days in that phase during June&ndash;November.</li>
+          <li><strong>Comparison and uncertainty.</strong> Compared the formation rate after phases 1&ndash;2 with the rate after phases 6&ndash;7 at each lag, with a 95% range from a bootstrap that resamples whole hurricane seasons.</li>
+        </ol>
+
+        <h2>Results</h2>
+        <figure class="figure-full">
+          <a href="mjo_genesis_rate_2009_2025.png" target="_blank" rel="noopener">
+            <img src="mjo_genesis_rate_2009_2025.png" alt="Two-panel figure. Left: tropical storm formation rate by MJO phase relative to average, for the phase on the day of formation and the phase 12 days before. Right: ratio of formation rate after phases 1 to 2 versus phases 6 to 7 for lags of 0 to 21 days, peaking at 2.3 at 12 days.">
+          </a>
+          <figcaption>
+            (a) North Atlantic tropical storm formation rate in each Wheeler&ndash;Hendon MJO
+            phase, relative to the average across phases, using the MJO phase on the day
+            the storm formed (blue) and 12 days earlier (green, hatched). (b) Formation rate after
+            phases 1&ndash;2 divided by the rate after phases 6&ndash;7, for lags of 0&ndash;21
+            days. The shaded band is the 95% range from resampling hurricane seasons.
+            June&ndash;November 2009&ndash;2025, active MJO days only. Click to enlarge.
+          </figcaption>
+        </figure>
+        <ul>
+          <li><strong>No same-day signal.</strong> Using the MJO phase on the day a storm forms, phases 1&ndash;2 show no advantage over phases 6&ndash;7 (ratio 0.8).</li>
+          <li><strong>The contrast builds over about 1&ndash;2 weeks.</strong> From roughly 5 days of lead time onward, storms formed more often after phases 1&ndash;2 than after phases 6&ndash;7.</li>
+          <li><strong>Strongest at 12 days.</strong> Storms formed about <strong>2.3 times as often</strong> when the MJO had been in phases 1&ndash;2 twelve days earlier as when it had been in phases 6&ndash;7 (95% range 1.2&ndash;4.3). Panel (a) shows most of this comes from phase 6, which was followed by very few storms.</li>
+          <li><strong>Fades by three weeks.</strong> By a 21-day lag, the two groups are about equal again.</li>
+        </ul>
+
+        <h2>Why it matters</h2>
+        <p>
+          The direction of the signal matches previous research, and the delay adds
+          something useful for forecasting: the MJO phase observed today relates more closely to
+          Atlantic storm formation 1&ndash;2 weeks later than to storms forming
+          right now. A one- to two-week heads-up on more or less favorable
+          periods is the kind of lead time that helps emergency managers
+          and forecasters plan staffing, messaging and preparedness during hurricane season.
+        </p>
+
+        <h2>How this analysis changed</h2>
+        <p>
+          The first version of this project, for an undergraduate course, used raw
+          storm counts by phase and found an apparent peak about 18&ndash;21 days after the MJO signal.
+          Revisiting the code turned up three issues: storms were grouped by
+          <em>name</em> (Atlantic names repeat every six years, so different storms were merged),
+          phases were numbered differently from the standard Wheeler&ndash;Hendon convention,
+          and weak-MJO days were included. After fixing these, raw counts no longer
+          showed a clear peak, which led to the rate-based comparison above.
+        </p>
+        <figure class="figure-full">
+          <a href="lead_lag_relationship_2009_2025.png" target="_blank" rel="noopener">
+            <img src="lead_lag_relationship_2009_2025.png" alt="Four-panel figure of tropical storm counts by Wheeler-Hendon MJO phase at lags of 0, 12 and 14 days, with quadratic trendlines, and R-squared versus lag showing no strong peak.">
+          </a>
+          <figcaption>
+            Corrected version of the original count-based figure (2009&ndash;2025,
+            Wheeler&ndash;Hendon phases, active MJO days, each storm counted once). The
+            quadratic trendline explains at most 29% of the variation in counts at any lag.
+          </figcaption>
+        </figure>
+
+        <h2>Limitations &amp; next steps</h2>
+        <ul>
+          <li>Seventeen seasons leave only about 2&ndash;25 storms in each phase at a given lag, and 22 lags were tested, so the result should be treated as exploratory. A longer record (for example, the MJO index back to 1974) would test whether it holds up.</li>
+          <li>Separate the effect of the MJO from other influences, especially El Ni&ntilde;o&ndash;Southern Oscillation (ENSO).</li>
+          <li>Look at <em>where</em> storms form at each lag, and at the conditions in between, such as vertical wind shear and mid-level moisture over the Atlantic.</li>
+        </ul>
+
+        <h2>Tools</h2>
+        <ul class="tags">
+          <li>Python</li><li>pandas</li><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Bootstrap resampling</li><li>Jupyter</li>
+        </ul>
+
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/ebsmith1106/grad_student_webpage/blob/main/mjo_genesis_rate_2009_2025.py" target="_blank" rel="noopener">View the analysis code</a>
+          <a class="btn btn-ghost" href="https://github.com/ebsmith1106/grad_student_webpage/blob/main/graphs_for_MJO_1.ipynb" target="_blank" rel="noopener">Original course notebook</a>
+          <a class="btn btn-ghost" href="index.html#projects">Back to projects</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Elizabeth Bayly Smith. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

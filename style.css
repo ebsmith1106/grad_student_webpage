@@ -237,6 +237,80 @@ img { max-width: 100%; display: block; }
 }
 .card-meta { margin: 1rem 0 0; font-size: 0.88rem; color: var(--muted); }
 
+.card-project { display: flex; flex-direction: column; }
+.card-thumb {
+  display: block;
+  margin: -1.5rem -1.5rem 1.2rem;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  background: #fff;
+}
+.card-thumb img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+}
+.card-thumb:hover img { transform: scale(1.03); }
+.card h3 a { color: var(--navy); }
+.card h3 a:hover { color: var(--green-dark); }
+.card-link { margin-top: auto; padding-top: 0.8rem; font-weight: 600; }
+
+/* ---------- Project detail page ---------- */
+.project-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 75%, var(--green) 140%);
+  color: #fff;
+  padding: 3.5rem 0 3rem;
+}
+.project-hero h1 { color: #fff; font-size: 2.4rem; max-width: 22em; }
+.project-hero .lead { margin-bottom: 0; }
+.back-link { color: #a8e6c6; font-weight: 600; font-size: 0.95rem; }
+.back-link:hover { color: #fff; }
+
+.project-body h2 { margin-top: 2.6rem; font-size: 1.6rem; }
+.project-body h2:first-child { margin-top: 0; }
+
+.fact-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0.5rem;
+}
+.fact {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+}
+.fact:nth-child(even) { border-left-color: var(--blue); }
+.fact strong { display: block; font-size: 1.5rem; color: var(--navy); font-family: Georgia, serif; }
+.fact span { font-size: 0.88rem; color: var(--muted); }
+
+.figure-full {
+  margin: 1.5rem 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.figure-full a { display: block; }
+.figure-full figcaption {
+  padding: 0.9rem 1.2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: var(--bg-alt);
+}
+
+.project-body ol li, .project-body ul li { margin-bottom: 0.4rem; }
+
+.project-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
+.btn-ghost { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+.btn-ghost:hover { background: var(--blue); color: #fff; }
+
 /* ---------- Gallery ---------- */
 .gallery {
   display: grid;
