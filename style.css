@@ -282,6 +282,22 @@ code { font-size: 0.9em; }
   font-size: 0.95rem;
 }
 
+.upcoming {
+  margin-top: 4.5rem;
+  padding: 2rem 2.2rem;
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+  background: var(--paper-2);
+}
+.upcoming h3 { font-size: clamp(1.4rem, 2.2vw, 1.75rem); margin: 0.7rem 0 0.8rem; }
+.upcoming p:last-child { margin: 0; max-width: 46em; }
+.upcoming .label { display: flex; align-items: center; gap: 0.6rem; color: var(--accent-dark); }
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(31, 138, 91, .45); } 50% { box-shadow: 0 0 0 6px rgba(31, 138, 91, 0); } }
+}
+
 /* ---------- Experience / education rows ---------- */
 .rows { border-top: 1px solid var(--line); }
 .row {
